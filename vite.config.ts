@@ -26,7 +26,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "PalaceEliteComponents",
-      fileName: (format) => `palace-elite-components.${format}.js`
+      fileName: (format) => `pe-components.${format}.js`
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

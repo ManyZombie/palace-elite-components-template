@@ -1,22 +1,22 @@
 {
-  "name": "palace-elite-components",
+  "name": "pe-components",
   "version": "0.2.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/palace-elite-components.umd.js",
-  "module": "./dist/palace-elite-components.es.js",
+  "main": "./dist/pe-components.umd.js",
+  "module": "./dist/pe-components.es.js",
   "exports": {
     ".": {
-      "import": "./dist/palace-elite-components.es.js",
-      "require": "./dist/palace-elite-components.umd.js"
+      "import": "./dist/pe-components.es.js",
+      "require": "./dist/pe-components.umd.js"
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ManyZombie/palace-elite-components-template.git"
+    "url": "git+https://github.com/ManyZombie/pe-components-template.git"
   },
-  "homepage": "https://github.com/ManyZombie/palace-elite-components-template.git#readme",
+  "homepage": "https://github.com/ManyZombie/pe-components-template.git#readme",
   "types": "./dist/src/index.d.ts",
   "keywords": [
     "vue2",
