@@ -16,7 +16,7 @@ dist-ssr
 /cypress/screenshots/
 
 # Editor directories and files
-.vscode/settings.json
+.vscode
 !.vscode/extensions.json
 .idea
 *.suo
