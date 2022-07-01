@@ -9,9 +9,8 @@ This template to started developing Vue 2 library component in Vite, Storybook, 
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
-
+.vscode/settings.json
 ```json
-//.vscode/settings.json
 {
   "css.validate": false,
   "scss.validate": false,
