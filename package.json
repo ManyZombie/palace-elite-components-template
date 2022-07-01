@@ -1,6 +1,6 @@
 {
   "name": "palace-elite-components",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "files": [
     "dist"
   ],
@@ -12,7 +12,16 @@
       "require": "./dist/palace-elite-components.umd.js"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManyZombie/palace-elite-components-template.git"
+  },
+  "homepage": "https://github.com/ManyZombie/palace-elite-components-template.git#readme",
   "types": "./dist/types/index.d.ts",
+  "keywords": [
+    "vue2",
+    "template"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
@@ -22,6 +31,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+
   "dependencies": {
     "vue": "^2.7.0"
   },
