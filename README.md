@@ -1,10 +1,13 @@
-# vite-component-library-vue2
+# pe-components-template 
 
-This template to started developing Vue 2 library component in Vite.
+This template to started developing Vue 2 library component in Vite, Storybook, Tailwind and Sass.
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur).
+[VSCode](https://code.visualstudio.com/)  
+[Volar](https://marketplace.visualstudio.com/items?itemName=zardoy.testPatched1) (and disable Vetur).
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+[Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 ## Type Support for `.vue` Imports in TS
 
@@ -16,14 +19,15 @@ However, if you wish to get actual prop types in `.vue` imports (for example to 
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Project Setup and run
 
 ```sh
-yarn install
+npm install
+npm run storybook
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-yarn build
+npm build
 ```
