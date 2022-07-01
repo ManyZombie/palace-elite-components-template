@@ -1,22 +1,22 @@
-# pe-components-template 
+# pe-components-template
 
 This template to started developing Vue 2 library component in Vite, Storybook, Tailwind and Sass.
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) 
-[Volar](https://marketplace.visualstudio.com/items?itemName=zardoy.testPatched1) (and disable Vetur). 
-[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) 
-[Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) 
+[VSCode](https://code.visualstudio.com/)<br/>
+[Volar](https://marketplace.visualstudio.com/items?itemName=zardoy.testPatched1) (and disable Vetur).<br/>
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)<br/>
+[Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)<br/>
 
 .vscode/settings.json
+
 ```json
 {
   "css.validate": false,
-  "scss.validate": false,
+  "scss.validate": false
 }
 ```
-
 
 ## Type Support for `.vue` Imports in TS
 
