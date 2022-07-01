@@ -4,10 +4,10 @@ This template to started developing Vue 2 library component in Vite, Storybook, 
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/)
-[Volar](https://marketplace.visualstudio.com/items?itemName=zardoy.testPatched1) (and disable Vetur).
-[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-[Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+[VSCode](https://code.visualstudio.com/) 
+[Volar](https://marketplace.visualstudio.com/items?itemName=zardoy.testPatched1) (and disable Vetur). 
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) 
+[Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) 
 
 .vscode/settings.json
 ```json
