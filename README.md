@@ -10,9 +10,8 @@ This template to started developing Vue 2 library component in Vite, Storybook, 
 [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 
-
 ```json
-// .vscode/settings.json
+//.vscode/settings.json
 {
   "css.validate": false,
   "scss.validate": false,
