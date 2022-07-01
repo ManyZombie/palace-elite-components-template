@@ -54,10 +54,9 @@ export default defineComponent({
     transition
     duration-150
     ease-in-out;
-}
 
-.p-button--solid {
-  @apply bg-blue-600
+  &--solid {
+    @apply bg-blue-600
     text-white
     hover:bg-blue-700
     focus:bg-blue-700
@@ -68,10 +67,10 @@ export default defineComponent({
     disabled:bg-opacity-10
     disabled:text-black
     disabled:text-opacity-25;
-}
+  }
 
-.p-button--outlined {
-  @apply border
+  &--outlined {
+    @apply border
     border-current
     text-blue-600
     hover:bg-blue-600 
@@ -80,5 +79,6 @@ export default defineComponent({
     focus:ring-0
     disabled:text-black
     disabled:text-opacity-25;
+  }
 }
 </style>
