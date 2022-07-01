@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "stylelint.vscode-stylelint",
+    "zardoy.testPatched1",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
