@@ -33,13 +33,14 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
-    ".storybook copy/main.js"
+    ""
   ],
   "exclude": [
     "node_modules",
     "**/*.stories.tsx",
     "**/*.stories.ts",
-    "**/*.test.ts"
+    "**/*.test.ts",
+    ".storybook"
   ],
   "references": [{ "path": "./tsconfig.storybook.json" }]
 }

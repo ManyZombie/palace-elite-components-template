@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
     "composite": true,
+    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
-    "strict": true,
+    "strict": true
   },
-  "include": ["src/**/*.stories.tsx", "src/**/*.stories.ts", "env.d.ts"],
+  "include": [
+    "src/**/*.stories.tsx",
+    "src/**/*.stories.ts",
+    "env.d.ts",
+    ".storybook"
+  ],
   "exclude": ["node_modules"]
 }
