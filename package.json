@@ -31,7 +31,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-
   "dependencies": {
     "vue": "^2.7.0"
   },
@@ -44,7 +43,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@storybook/vue": "^6.5.9",
     "@types/node": "^16.11.9",
-    "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue2": "^1.1.2",
     "@vue/runtime-dom": "^3.2.37",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
