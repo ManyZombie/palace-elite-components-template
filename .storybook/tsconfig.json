@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "rootDir": "../",
+    "baseUrl": "../",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "composite": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "strict": true,
+  },
+  "include": [
+    "../src/**/*.stories.tsx",
+    "../src/**/*.stories.ts",
+    "../env.d.ts",
+    "./**/*.ts"
+  ],
+  "exclude": ["node_modules", "main.ts"]
+}

@@ -1,6 +1,5 @@
-// import type { StorybookViteConfig } from 'storybook-builder-vite-vue2';
 const { loadConfigFromFile, mergeConfig } = require("vite");
-const path = require("path");
+const { resolve } = require("path");
 
 module.exports = {
   stories: [
@@ -18,7 +17,7 @@ module.exports = {
   },
   async viteFinal(previousConfig) {
     const { config } = await loadConfigFromFile(
-      path.resolve(__dirname, "../vite.config.ts")
+      resolve(__dirname, "../vite.config.ts")
     );
     return mergeConfig(previousConfig, {
       ...config,

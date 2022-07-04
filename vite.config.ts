@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
-import path from "path";
+import { fileURLToPath, URL } from "url";
+import { resolve } from "path";
 // New plugin for vue 2 compatibility when storybook-builder-vite-vue2 
 // updates should remove vite-plugin-vue2 and vue-template-compiler
 import vue from "@vitejs/plugin-vue2";
@@ -9,9 +10,8 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      "@/": new URL("./src/", import.meta.url).pathname
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
-    extensions: ['.mjs', '.mdx', '.js', '.ts', '.json', '.vue', '.scss', '.sass', '.css'],
   },
   css: {
     preprocessorOptions: {
@@ -26,9 +26,9 @@ export default defineConfig({
   build: {
     target: "esnext",
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
-      name: "PalaceEliteComponents",
-      fileName: (format) => `pe-components.${format}.js`
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "pe-components",
+      fileName: (format) => `pe-components.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
