@@ -6,7 +6,6 @@ module.exports = {
     'vue/setup-compiler-macros': true,
   },
   extends: [
-    // 'eslint:recommended',
     'airbnb-base',
     '@vue/prettier',
     '@vue/typescript/recommended',
@@ -17,7 +16,7 @@ module.exports = {
     'plugin:import/typescript',
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2022,
   },
   rules: {
     'no-console': 'warn',
