@@ -53,28 +53,28 @@ export default defineComponent({
 
   &--solid {
     @apply bg-blue-600
-    text-white
-    hover:bg-blue-700
-    focus:bg-blue-700
-    focus:outline-none
-    focus:ring-0
-    active:bg-blue-800
-    disabled:bg-black
-    disabled:bg-opacity-10
-    disabled:text-black
-    disabled:text-opacity-25;
+      text-white
+      hover:bg-blue-700
+      focus:bg-blue-700
+      focus:outline-none
+      focus:ring-0
+      active:bg-blue-800
+      disabled:bg-black
+      disabled:bg-opacity-10
+      disabled:text-black
+      disabled:text-opacity-25;
   }
 
   &--outlined {
     @apply border
-    border-current
-    text-blue-600
-    hover:bg-blue-600
-    hover:bg-opacity-5
-    focus:outline-none
-    focus:ring-0
-    disabled:text-black
-    disabled:text-opacity-25;
+      border-current
+      text-blue-600 hover:
+      bg-blue-600
+      hover:bg-opacity-5
+      focus:outline-none
+      focus:ring-0
+      disabled:text-black
+      disabled:text-opacity-25;
   }
 }
 </style>
