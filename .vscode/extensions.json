@@ -2,6 +2,8 @@
   "recommendations": [
     "stylelint.vscode-stylelint",
     "zardoy.testPatched1",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
   ]
 }
