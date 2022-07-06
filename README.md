@@ -19,7 +19,7 @@ This template to started developing Vue 2 library component in Vite, Storybook, 
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "files.encoding": "utf8",
-  "files.eol": "\n",
+  "files.eol": "\r\n",
   "diffEditor.ignoreTrimWhitespace": false,
   "files.insertFinalNewline": true,
   "[mdx]": {
