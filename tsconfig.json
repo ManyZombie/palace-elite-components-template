@@ -33,6 +33,8 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
+    "src/**/*.ts",
+
   ],
   "exclude": [
     "node_modules",
@@ -41,5 +43,5 @@
     "**/*.test.ts",
     ".storybook"
   ],
-  "references": [{ "path": "./.storybook/tsconfig.json" }]
+  "references": [{ "path": "./tsconfig.storybook.json" }]
 }
