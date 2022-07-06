@@ -68,8 +68,8 @@ export default defineComponent({
   &--outlined {
     @apply border
       border-current
-      text-blue-600 hover:
-      bg-blue-600
+      text-blue-600 
+  hover:bg-blue-600
       hover:bg-opacity-5
       focus:outline-none
       focus:ring-0
