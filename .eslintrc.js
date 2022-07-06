@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    es2021: true,
+    es2022: true,
     'vue/setup-compiler-macros': true,
   },
   extends: [
@@ -17,7 +17,8 @@ module.exports = {
     'prettier',
   ],
   parserOptions: {
-    ecmaVersion: 2022,
+    tsconfigRootDir: '.',
+    sourceType: 'module',
     project: './tsconfig.json',
   },
   rules: {
@@ -26,18 +27,18 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
   },
-  overrides: [
-    {
-      files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs|mdx)'],
-      parserOptions: {
-        ecmaVersion: 2022,
-        project: './.storybook/tsconfig.json',
-      },
-      extends: ['plugin:storybook/recommended'],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: ['./tsconfig.json', './tsconfig.storybook.json'],
       },
     },
+  },
+  overrides: [
     {
       files: ['vite.config.ts'],
       rules: {
@@ -49,6 +50,34 @@ module.exports = {
             peerDependencies: false,
           },
         ],
+      },
+    },
+    {
+      files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs|mdx)'],
+      parserOptions: {
+        ecmaVersion: 2022,
+        project: './tsconfig.storybook.json',
+      },
+      extends: ['plugin:storybook/recommended'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+            optionalDependencies: false,
+            peerDependencies: true,
+          },
+        ],
+      },
+    },
+    {
+      files: ['.storybook/preview.ts'],
+      parserOptions: {
+        ecmaVersion: 2022,
+        project: './tsconfig.storybook.json',
+      },
+      rules: {
+        'import/prefer-default-export': 'off',
       },
     },
   ],
