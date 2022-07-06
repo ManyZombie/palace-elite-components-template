@@ -23,7 +23,6 @@
     "components-library"
   ],
   "scripts": {
-    "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
     "preserve": "vite build",
     "serve": "vite preview --port 5050",
