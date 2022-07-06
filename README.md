@@ -13,16 +13,20 @@ This template to started developing Vue 2 library component in Vite, Storybook, 
 
 ```json
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "css.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.insertFinalNewline": true,
+  "[mdx]": {
+    "files.insertFinalNewline": false
+  }
 }
 ```
-
-## Type Support for `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates.
-
-However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
 ## Customize configuration
 
@@ -40,3 +44,9 @@ npm run storybook
 ```sh
 npm build
 ```
+
+## Type Support for `.vue` Imports in TS
+
+Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates.
+
+However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can run `Volar: Switch TS Plugin on/off` from VSCode command palette.
