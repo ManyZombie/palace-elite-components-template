@@ -1,7 +1,7 @@
 declare module '*.vue' {
-  import Vue from 'vue';
+  import vue from 'vue';
 
-  export default Vue;
+  export default vue;
 }
 
 declare module '@vue/runtime-dom' {

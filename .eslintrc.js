@@ -9,14 +9,14 @@ module.exports = {
     'airbnb-base',
     'airbnb-typescript/base',
     'plugin:vue/recommended',
-    'plugin:prettier-vue/recommended',
     '@vue/typescript/recommended',
     'plugin:markdown/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'prettier',
+    '@vue/eslint-config-prettier',
   ],
   parserOptions: {
-    tsconfigRootDir: '.',
     project: './tsconfig.json',
   },
   rules: {
@@ -26,9 +26,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
   },
   settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,

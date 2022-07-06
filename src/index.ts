@@ -4,7 +4,7 @@ import PEButton from './components/PEButton/PEButton.vue';
 export { PEButton };
 
 const install: PluginFunction<any> = (Vue: VueConstructor): void => {
-  Vue.component('MyButton', PEButton);
+  Vue.component('MyButton', PEButton as unknown as Vue);
 };
 
 export const plugin: PluginObject<any> = {

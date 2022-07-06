@@ -13,9 +13,9 @@
     "strict": true
   },
   "include": [
+    "env.d.ts",
     "src/**/*.stories.tsx",
     "src/**/*.stories.ts",
-    "env.d.ts",
     ".storybook/**/*.ts"
   ],
   "exclude": ["node_modules"]

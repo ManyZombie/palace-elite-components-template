@@ -23,18 +23,17 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
   },
   "vueCompilerOptions": {
     "target": 2.7
   },
   "include": [
-    "vite.config.*",
     "env.d.ts",
+    "vite.config.*",
     "src/**/*",
     "src/**/*.vue",
-    "src/**/*.ts",
-
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
