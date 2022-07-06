@@ -9,16 +9,14 @@ module.exports = {
     'airbnb-base',
     'airbnb-typescript/base',
     'plugin:vue/recommended',
-    '@vue/typescript/recommended',
     'plugin:prettier-vue/recommended',
+    '@vue/typescript/recommended',
     'plugin:markdown/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'prettier',
   ],
   parserOptions: {
     tsconfigRootDir: '.',
-    sourceType: 'module',
     project: './tsconfig.json',
   },
   rules: {
