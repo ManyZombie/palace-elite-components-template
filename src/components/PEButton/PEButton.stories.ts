@@ -1,5 +1,5 @@
-import PEButton from './PEButton.vue';
 import { Meta, StoryFn } from '@storybook/vue';
+import PEButton from './PEButton.vue';
 
 export default {
   title: 'Atomic/PEButton',

@@ -1,11 +1,11 @@
 <template>
-  <button class="p-button" :class="classes" :disabled="disabled">
+  <button class="pe-button" :class="classes" :disabled="disabled">
     {{ label }}
   </button>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'PEButton',
@@ -18,31 +18,27 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
-    color: {
-      type: String,
-    },
     disabled: {
       type: Boolean,
       default: false,
     },
   },
   emits: ['click'],
-  setup(props) {
-    const classes = computed(() => {
-      const classes: string[] = [];
-      // props.color && classes.push(`is-${props.color}`);
-      classes.push(props.outlined ? 'p-button--outlined' : 'p-button--solid');
-      props.disabled && classes.push('p-button--disabled');
-      return classes;
-    });
-
-    return { classes };
+  computed: {
+    classes() {
+      const array: string[] = [];
+      array.push(
+        this.$props.outlined ? 'pe-button--outlined' : 'pe-button--solid'
+      );
+      if (this.$props.disabled) array.push('pe-button--disabled');
+      return array;
+    },
   },
 });
 </script>
 
 <style lang="scss">
-.p-button {
+.pe-button {
   @apply inline-block
     px-6
     py-2.5
@@ -73,9 +69,9 @@ export default defineComponent({
     @apply border
     border-current
     text-blue-600
-    hover:bg-blue-600 
-    hover:bg-opacity-5 
-    focus:outline-none 
+    hover:bg-blue-600
+    hover:bg-opacity-5
+    focus:outline-none
     focus:ring-0
     disabled:text-black
     disabled:text-opacity-25;
