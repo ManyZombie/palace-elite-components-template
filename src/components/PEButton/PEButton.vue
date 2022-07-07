@@ -5,36 +5,34 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue';
+import { Component, Vue, Emit, Prop } from 'vue-property-decorator';
 
-export default defineComponent({
-  name: 'PEButton',
-  props: {
-    label: {
-      type: String as PropType<string>,
-      default: 'Button',
-    },
-    outlined: {
-      type: Boolean as PropType<boolean>,
-      default: false,
-    },
-    disabled: {
-      type: Boolean as PropType<boolean>,
-      default: false,
-    },
-  },
-  emits: ['click'],
-  computed: {
-    classes() {
-      const array: string[] = [];
-      array.push(
-        this.$props.outlined ? 'pe-button--outlined' : 'pe-button--solid'
-      );
-      if (this.$props.disabled) array.push('pe-button--disabled');
-      return array;
-    },
-  },
-});
+@Component
+export default class PEButton extends Vue {
+  @Prop({ required: true, default: 'Button' })
+  label!: string;
+
+  @Prop({ required: true, type: String, default: false })
+  disabled!: boolean;
+
+  @Prop({ required: true, type: String, default: false })
+  outlined!: boolean;
+
+  // eslint-disable-next-line class-methods-use-this
+  @Emit()
+  click(e: Event) : Event{
+    return e;
+  }
+
+  get classes(): string[] {
+    const array: string[] = [];
+    array.push(
+      this.$props.outlined ? 'pe-button--outlined' : 'pe-button--solid'
+    );
+    if (this.$props.disabled) array.push('pe-button--disabled');
+    return array;
+  }
+}
 </script>
 
 <style lang="scss">
