@@ -20,7 +20,7 @@ export default class PEButton extends Vue {
 
   // eslint-disable-next-line class-methods-use-this
   @Emit()
-  click(e: Event) : Event{
+  click(e: Event): Event {
     return e;
   }
 
